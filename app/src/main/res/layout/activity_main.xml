@@ -30,18 +30,20 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/layout1">
 
-        <Button
-            android:id="@+id/start"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="start"
-            android:text="@string/start" />
-
         <TextView
             android:id="@+id/span"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/span"
+            android:onClick="start"
+            android:text="@string/start" />
+
 
         <Button
             android:id="@+id/stop"
